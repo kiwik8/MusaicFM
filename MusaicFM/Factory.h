@@ -18,5 +18,5 @@
 + (NSURLComponents *)spotifyNewReleases;
 + (NSURLComponents *)spotifyToken;
 + (NSURLComponents *)spotifyAuthentification;
-
++ (NSURLComponents *)spotifyPlaylist;
 @end

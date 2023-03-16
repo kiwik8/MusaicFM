@@ -128,7 +128,7 @@
 {
     NSURLRequest* (^create)(NSInteger offset) = ^NSURLRequest*(NSInteger offset)
     {
-        NSURLComponents* offsetComponents = [Factory spotifyTracks];
+        NSURLComponents* offsetComponents = [Factory spotifyPlaylist];
         offsetComponents.queryItems = @[ [NSURLQueryItem queryItemWithName:@"limit" value:@"50"],
             [NSURLQueryItem queryItemWithName:@"offset"
                                         value:@(offset).stringValue] ];

@@ -44,6 +44,14 @@
     components.path = @"/v1/me/tracks";
     return components;
 }
++ (NSURLComponents*)spotifyPlaylist
+{
+    NSURLComponents* components = [NSURLComponents new];
+    components.scheme = @"https";
+    components.host = @"api.spotify.com";
+    components.path = [NSString stringWithFormat:@"/v1/playlists/%@/tracks", @"0PKU47hWk8ovr190n1DK3T"];
+    return components;
+}
 
 + (NSURLComponents*)spotifyNewReleases
 {
